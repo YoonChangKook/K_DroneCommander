@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('javolution-core-java-6.1.0-20140201.140336-13.jar'))

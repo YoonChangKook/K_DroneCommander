@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kyc89_000.dronecommander.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/logBox"
+        android:enabled="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:scrollIndicators="right"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:editable="false"
+        android:layout_below="@+id/droneConnectBtn"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deviceNameTextBox"
+        android:editable="true"
+        android:scrollIndicators="none"
+        android:enabled="true"
+        android:focusable="true"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/connectBtn"
+        android:layout_toStartOf="@+id/connectBtn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:id="@+id/connectBtn"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BluetoothName"
+        android:id="@+id/textView"
+        android:inputType="none"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drone Connect"
+        android:id="@+id/droneConnectBtn"
+        android:layout_below="@+id/dronePortTextBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP"
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/textView3"
+        android:textAlignment="center"
+        android:layout_alignRight="@+id/deviceNameTextBox"
+        android:layout_alignEnd="@+id/deviceNameTextBox"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Port"
+        android:id="@+id/textView3"
+        android:textSize="20dp"
+        android:layout_below="@+id/connectBtn"
+        android:layout_toRightOf="@+id/deviceNameTextBox"
+        android:layout_alignRight="@+id/connectBtn"
+        android:layout_alignEnd="@+id/connectBtn"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dronePortTextBox"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:editable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:scrollIndicators="none"
+        android:layout_alignRight="@+id/droneConnectBtn"
+        android:layout_alignEnd="@+id/droneConnectBtn"
+        android:layout_below="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drone Name"
+        android:id="@+id/textView4"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_above="@+id/droneIpTextBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/droneNameTextBox"
+        android:layout_alignTop="@+id/droneIpTextBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/droneIpTextBox"
+        android:layout_toStartOf="@+id/droneIpTextBox" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/droneIpTextBox"
+        android:layout_above="@+id/droneConnectBtn"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignRight="@+id/deviceNameTextBox"
+        android:layout_alignEnd="@+id/deviceNameTextBox" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drone Find"
+        android:id="@+id/droneFindBtn"
+        android:layout_below="@+id/droneNameTextBox"
+        android:layout_toLeftOf="@+id/droneConnectBtn"
+        android:layout_toStartOf="@+id/droneConnectBtn" />
+
+</RelativeLayout>
